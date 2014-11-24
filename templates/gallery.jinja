@@ -1,0 +1,52 @@
+{% extends "base.jinja" %}
+{% block title %}Nick Tighe - Paintings{% endblock %}
+{% block scripts %}
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" />    
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h2>Paintings</h2>
+        <div class="img">
+            <a class="fancybox" href="{{ url_for('static', filename='gallery/pub.jpeg') }}">
+                <img src="{{ url_for('static', filename='gallery/pub.jpeg') }}" height=200>
+            </a>
+        </div>
+        <div class="img">
+            <a class="fancybox" href="{{ url_for('static', filename='gallery/cow.jpeg') }}">
+                <img src="{{ url_for('static', filename='gallery/cow.jpeg') }}" height=200>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Drawings</h2>
+        <div class="img">
+            <a class="fancybox" href="{{ url_for('static', filename='gallery/dog.jpeg') }}">
+                <img src="{{ url_for('static', filename='gallery/dog.jpeg') }}" height=200>
+            </a>
+        </div>
+        <div class="img">
+            <a class="fancybox" href="{{ url_for('static', filename='gallery/owl.jpeg') }}">
+                <img src="{{ url_for('static', filename='gallery/owl.jpeg') }}" height=200>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Photographs</h2>
+        <div class="img">
+            <a class="fancybox" href="{{ url_for('static', filename='gallery/bluebell.png') }}">
+                <img src="{{ url_for('static', filename='gallery/bluebell.png') }}" height=200>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <footer>
+            All images &copy Nick Tighe 2014
+        </footer>
+    </div>
+{% endblock %}

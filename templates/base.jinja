@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block style %}
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/base.min.css">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.min.css">
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        {% endblock %}
+        <title>{% block title %}{% endblock %}</title>
+        {% block scripts %}{% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Nick Tighe | <small>artist.painter.creator</small></h1>
+            </header>
+            <div class="three columns sidebar">
+                <nav>
+                    <ul class="sidebar-nav">
+                        <li><a href="{{ url_for('gallery') }}">GALLERY</a></li>
+                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nine columns content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

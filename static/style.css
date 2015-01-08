@@ -3,10 +3,10 @@
     src: url("./Menlo.ttc") format("truetype");
 }
 
-/*html * {
+html * {
     font-family: "Menlo", sans-serif;
 }
-*/
+
 header h1 {
     font-size: 2em;
     letter-spacing: 0.2em;

@@ -2,7 +2,7 @@ from __future__ import print_function
 from flask import Flask, render_template
 import locale
 
-locale.setlocale(locale.LC_ALL, 'en_GB')
+locale.setlocale(locale.LC_ALL, locale.getdefaultlocale())
 
 app = Flask(__name__)
 

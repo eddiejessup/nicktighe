@@ -1,9 +1,3 @@
-$('#gallery').imagesLoaded(function() {
-    $('#gallery').masonry({
-      itemSelector: '.img'
-    });
-});
-
 $(document).ready(function() {
     $(".fancybox").fancybox({
           helpers: {
@@ -12,4 +6,10 @@ $(document).ready(function() {
               }
           }
       });
+
+    $('#gallery').imagesLoaded(function() {
+        $('#gallery').masonry({
+          itemSelector: '.img'
+        });
+    });
 });

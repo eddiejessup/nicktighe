@@ -39,10 +39,24 @@ p {
 div.img {
     margin: 5px;
     padding: 5px;
+    height: auto;
+    min-width: 400px;
     float: left;
+    text-align: center;
 }
 
 div.img img {
     display: inline;
     margin: 5px;
+}
+
+.work {
+    text-align: center;
+    font-weight: normal;
+    /*width: 300px;*/
+    margin: 5px;
+}
+
+#work-title {
+    font-weight: bold;
 }

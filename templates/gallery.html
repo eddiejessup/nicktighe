@@ -3,6 +3,8 @@
 {% block scripts %}
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
     <script src="{{ url_for('static', filename='js/fancy_gallery.js') }}"></script>
 {% endblock %}
 {% block style %}
@@ -10,11 +12,11 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-    <div class="container">
+    <div class="container" id="gallery">
         {% for item in items %}
             <div class="img">
                 <a class="fancybox" title="{{ item['title'] }}" href="{{ url_for('static', filename=item['filename']) }}">
-                    <img src="{{ url_for('static', filename=item['filename']) }}" height=200>
+                    <img src="{{ url_for('static', filename=item['filename']) }}" width=300>
                 </a>
                 <p class="work" id="work-title">{{ item['title'] }}</p>
                 <p class="work" id="work-medium">{{ item['medium'] }}</p>

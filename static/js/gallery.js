@@ -11,5 +11,6 @@ $(document).ready(function() {
         $('#gallery').masonry({
           itemSelector: '.img'
         });
+        $('#gallery').masonry();
     });
 });

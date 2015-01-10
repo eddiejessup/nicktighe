@@ -16,7 +16,9 @@
                 <a class="fancybox" title="{{ item['title'] }}" href="{{ url_for('static', filename=item['filename']) }}">
                     <img src="{{ url_for('static', filename=item['filename']) }}" height=200>
                 </a>
-                <p>{{ item['title'] }}</p>
+                <p class="work" id="work-title">{{ item['title'] }}</p>
+                <p class="work" id="work-medium">{{ item['medium'] }}</p>
+                <p class="work" id="work-size">{{ item['size'] }}</p>
             </div>
         {% endfor %}
     </div>

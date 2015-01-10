@@ -18,6 +18,11 @@ items = [
      'title': 'Bowland Hen Harrier. Pencil on paper, 29 cm by 42 cm.'},
     {'filename': 'gallery/bluebell.png',
      'title': 'Untitled. Ink, pencil, chalk, watercolour and acrylic.'},
+    {'filename': 'gallery/george.jpeg',
+     'title': 'George the Boxer. Pencil, chalk, charcoal, watercolour and '
+     'acrylic on paper, 21 cm by 29 cm.'},
+    {'filename': 'gallery/he_and_she.jpeg',
+     'title': 'He and She. Pencil on paper, 40 cm by 25 cm.'},
 ]
 
 

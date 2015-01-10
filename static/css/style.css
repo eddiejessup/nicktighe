@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Menlo";
-    src: url("./Menlo.ttc") format("truetype");
+    src: url("../Menlo.ttc") format("truetype");
 }
 
 html * {

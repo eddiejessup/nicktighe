@@ -32,7 +32,7 @@ items = [
      'title': 'George the Boxer',
      'medium': 'Pencil, chalk, charcoal, watercolour and acrylic on paper',
      'size': '21 cm x 29 cm'},
-    {'filename': 'gallery/bluebell.png',
+    {'filename': 'gallery/bluebell.jpeg',
      'title': 'Untitled',
      'medium': 'Ink, pencil, chalk, watercolour and acrylic on paper'},
 ]

@@ -26,11 +26,6 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/contact.html')
-def contact():
-    return render_template('contact.html')
-
-
 @app.route('/gallery.html')
 def gallery():
     return render_template('gallery.html', items=items)
